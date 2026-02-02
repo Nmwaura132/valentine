@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 A Special Question...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Outfit:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Main Content -->
+    <div class="container" id="mainContainer">
+        <!-- Intro Screen -->
+        <div class="screen intro-screen active" id="introScreen">
+            <div class="glow-orb"></div>
+            <h1 class="title">Hey Beautiful 💖</h1>
+            <p class="subtitle">I have something special to ask you...</p>
+            <p class="years-badge">5 years of love ✨</p>
+            <button class="btn btn-primary pulse" id="startBtn">Open My Heart</button>
+        </div>
+
+        <!-- Memory Lane Screen -->
+        <div class="screen memory-screen" id="memoryScreen">
+            <h2 class="section-title">Remember when...</h2>
+            <div class="memory-cards" id="memoryCards">
+                <div class="memory-card" data-delay="0">
+                    <span class="memory-emoji">🌅</span>
+                    <p>We had our first date</p>
+                </div>
+                <div class="memory-card" data-delay="200">
+                    <span class="memory-emoji">😂</span>
+                    <p>We laughed until we cried</p>
+                </div>
+                <div class="memory-card" data-delay="400">
+                    <span class="memory-emoji">🌙</span>
+                    <p>We stayed up all night talking</p>
+                </div>
+                <div class="memory-card" data-delay="600">
+                    <span class="memory-emoji">💪</span>
+                    <p>We got through everything together</p>
+                </div>
+            </div>
+            <button class="btn btn-secondary" id="nextBtn">Let's Play a Game 🎮</button>
+        </div>
+
+        <!-- GAME SCREEN - Catch the Hearts -->
+        <div class="screen game-screen" id="gameScreen">
+            <div class="game-header">
+                <h2 class="game-title">Catch My Love! 💕</h2>
+                <p class="game-instructions">Catch <span class="target-score">10</span> hearts to unlock the surprise!
+                </p>
+                <div class="score-display">
+                    <span class="score-hearts">💖</span>
+                    <span class="score-value" id="scoreValue">0</span>
+                    <span class="score-separator">/</span>
+                    <span class="score-target">10</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+            <div class="game-area" id="gameArea">
+                <!-- Hearts will spawn here -->
+            </div>
+            <p class="game-hint">Tap or click the falling hearts! 💕</p>
+        </div>
+
+        <!-- The Question Screen -->
+        <div class="screen question-screen" id="questionScreen">
+            <div class="heart-pulse">💝</div>
+            <h2 class="question-title">Will You Be My Valentine?</h2>
+            <p class="question-sub">For the 5th time... but who's counting? 😏</p>
+
+            <div class="buttons-container">
+                <button class="btn btn-yes" id="yesBtn">YES! 💕</button>
+                <button class="btn btn-no" id="noBtn">No</button>
+            </div>
+
+            <p class="escape-hint" id="escapeHint">Psst... the No button might be shy 😉</p>
+        </div>
+
+        <!-- Success Screen -->
+        <div class="screen success-screen" id="successScreen">
+            <div class="confetti-container" id="confettiContainer"></div>
+            <div class="success-content">
+                <h1 class="success-title">I KNEW IT! 🎉</h1>
+                <div class="big-heart">❤️</div>
+                <p class="love-message">You just made me the happiest person alive!</p>
+                <p class="forever-text">Here's to 5 years and forever more 💕</p>
+                <div class="signature">
+                    — With all my love
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
